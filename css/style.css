@@ -1,0 +1,129 @@
+:root{
+    --very-dark: #1B1D23;
+    --dark-gray: #60636D;
+    --meidum-gray: #7D828F;
+    --light-gray: #C8CCD8;
+    --very-light-gray: #EEEFF4;
+    --error-red: #DF5656;
+}
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 300;
+}
+
+/* utils */
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* header */
+.header-wrapper{
+    display: flex;
+    gap: 3rem;
+    align-items: baseline;
+    padding: 3rem 0;
+}
+
+.header-logo a{
+    color: var(--very-dark);
+}
+
+.header-logo h3{
+    font-size: 3rem;
+    letter-spacing: .1;
+    color: var(--very-dark);
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    gap:1rem;
+}
+
+.header-nav li a{
+    color: var(--meidum-gray);
+    font-weight: 500;
+}
+
+/* hero */
+.hero-wrapper{
+    background-image: url(../assets/home/desktop/image-hero-paramour.jpg);
+    background-position: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    position: relative;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding-left: 10rem;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hero-text h1{
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 4rem;
+    color:var(--very-light-gray);
+}
+
+.hero-text p{
+    color: var(--very-light-gray);
+}
+
+.hero-text .jumbo-btn{
+    color: var(--very-light-gray);
+    background-color: var(--very-dark);
+    padding: 1rem;
+    width: 66%;
+}
+
+.hero-page-number{
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 0; 
+    position: absolute;
+    left: -4rem;
+}
+
+.hero-page-number li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--very-light-gray);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hero-page-number li a{
+    color: var(--very-dark);
+}
+
+.hero-page-number .active{
+    background-color: var(--very-dark);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hero-page-number .active a{
+    color: var(--very-light-gray);
+}
