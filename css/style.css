@@ -24,6 +24,11 @@
     margin: 0 auto;
 }
 
+h2{
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
 /* header */
 .header-wrapper{
     display: flex;
@@ -88,7 +93,7 @@
     color: var(--very-light-gray);
 }
 
-.hero-text .jumbo-btn{
+.jumbo-btn{
     color: var(--very-light-gray);
     background-color: var(--very-dark);
     padding: 1rem;
@@ -125,5 +130,70 @@
 }
 
 .hero-page-number .active a{
+    color: var(--very-light-gray);
+}
+
+.giant-title{
+    font-size: 15rem;
+    font-weight: 600;
+    line-height: 4rem;
+    color: var(--very-light-gray);
+    margin: 1rem 0;
+    padding-top: 6rem;
+}
+
+.welcome-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.welcome-wrapper .welcome-text{
+    display: flex;
+    flex-direction: column;
+    width: 53%;
+    padding-left: 10rem;
+    justify-content: center;
+    gap: 2rem;
+    text-align: inherit;
+    justify-content: flex-start;
+    padding-top: 8rem;
+}
+.welcome-image{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-left: 10rem;
+    justify-content: center;
+    gap: 1rem;
+    z-index: -1;
+}
+.welcome-wrapper .welcome-image{
+    background-image: url(../assets/home/desktop/image-welcome.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right top;
+    min-height: 500px;
+    min-width: 350px;
+}
+
+.about-wrapper{
+    display: flex;
+    background-image: url(../assets/home/desktop/image-small-team.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    margin-top: 6rem;
+}
+
+.about-text{
+    width: 31ch;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    margin-left: 11rem;
     color: var(--very-light-gray);
 }
