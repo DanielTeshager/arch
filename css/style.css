@@ -97,7 +97,8 @@ h2{
     color: var(--very-light-gray);
     background-color: var(--very-dark);
     padding: 1rem;
-    width: 66%;
+    width: 10rem;
+    height: 3rem;
 }
 
 .hero-page-number{
@@ -196,4 +197,93 @@ h2{
     justify-content: center;
     margin-left: 11rem;
     color: var(--very-light-gray);
+}
+
+.featured-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.featured-text h2{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.featured-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.featured-card-text{
+    position: relative;
+    top: -5rem;
+    left: 2rem;
+    color: var(--very-light-gray);
+}
+
+.featured-card-text h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+ 
+}
+
+
+.featured-card-text a{
+    color: var(--very-light-gray);
+}
+
+.featured-card-image img{
+    width: 100%;
+    height: 100%;
+    background: rgba(50, 70, 80, 0.7);
+}
+
+.featured-card-image{
+    position: relative;
+}
+
+.featured-card-image::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    background-color: var(--very-dark);
+    opacity: .5;
+}
+
+.footer-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-logo-nav{
+    display: flex;
+    width: 90%;
+    background-color: var(--light-gray);
+    align-items: center;
+}
+
+.footer-nav{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-left: 2rem;
+}
+
+.footer-logo-nav h3{
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--very-light-gray);
+    background-color: var(--very-dark);
+}
+
+.footer-logo-nav a{
+    color: var(--very-dark);
 }
